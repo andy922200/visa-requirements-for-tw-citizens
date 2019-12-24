@@ -40,14 +40,14 @@
       </nav>
     </div>
     <br />
-    <table class="table">
+    <table class="table table-hover">
       <thead class="thead-dark">
         <tr>
           <th scope="col">#</th>
           <th scope="col">國家/區域</th>
-          <th scope="col">英文名稱</th>
-          <th scope="col">洲別</th>
           <th scope="col">簽證類型</th>
+          <th scope="col">天數</th>
+          <th scope="col">備註</th>
         </tr>
       </thead>
       <tbody>
@@ -57,9 +57,9 @@
         >
           <th scope="row">{{country.id}}</th>
           <td>{{country.name}}</td>
-          <td>{{country.nameEn}}</td>
-          <td>{{country.Continent.name}}</td>
           <td>{{country.Category.name}}</td>
+          <td>{{country.days}}</td>
+          <td>{{country.remark}}</td>
         </tr>
       </tbody>
     </table>
@@ -67,7 +67,7 @@
 </template>
 
 <script>
-import Navbar from "./../components/Navbar.vue";
+import Navbar from "./../components/Navbar";
 import { Toast } from "./../utils/helpers";
 import countriesAPI from "./../apis/countries";
 
