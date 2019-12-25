@@ -33,12 +33,9 @@ export default {
 
 <style>
 #navbarSupportedContent a {
-  font-size: 28px;
+  font-size: 30px;
   color: white;
   margin: 5px auto;
 }
-
-#navbarSupportedContent a:hover {
-  color: rgb(0, 0, 0);
-}
 </style>
+

@@ -192,6 +192,13 @@ module.exports = {
           ContinentId: 7,
           createdAt: new Date(),
           updatedAt: new Date()
+        },
+        {
+          name: `中亞`,
+          nameEn: `Central Asia`,
+          ContinentId: 1,
+          createdAt: new Date(),
+          updatedAt: new Date()
         }
       ],
       {}

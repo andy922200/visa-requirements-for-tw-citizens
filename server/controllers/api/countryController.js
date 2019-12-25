@@ -6,7 +6,7 @@ const Country = db.Country
 const Sequelize = require('sequelize')
 const Op = Sequelize.Op
 const path = require('path')
-const pageLimit = 10
+const pageLimit = 20
 
 let countryController = {
   getAllCountries: (req, res) => {

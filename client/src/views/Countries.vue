@@ -6,8 +6,8 @@
     <br />
     <br />
     <div class="row justify-content-center">
-      請以中文輸入國家/地區關鍵字：
-      <input type="text" v-model="query" />
+      請以中文輸入國家/地區關鍵字
+      <input type="text" class="form-control" placeholder="如：英國" v-model="query" />
     </div>
     <br />
     <div class="row justify-content-center">
@@ -18,7 +18,7 @@
             :class="['page-item',{disabled:currentPage===1}]"
             @click.prevent="setPage(currentPage-1)"
           >
-            <a class="page-link" href="#">上一頁</a>
+            <a class="page-link" href="#">&lt;</a>
           </li>
           <li
             v-for="page in totalPage"
@@ -34,18 +34,22 @@
             :class="['page-item',{disabled:currentPage===totalPage}]"
             @click.prevent="setPage(currentPage+1)"
           >
-            <a class="page-link" href="#">下一頁</a>
+            <a class="page-link" href="#">&gt;</a>
           </li>
         </ul>
       </nav>
     </div>
-    <br />
+    <div class="row justify-content-center">
+      <a target="_blank" href="https://www.boca.gov.tw/cp-37-220-9f130-1.html">
+        <h5>最新官方 PDF 檔請點此</h5>
+      </a>
+      <h5 style="margin-left:10px;">2019.12.06 資料</h5>
+    </div>
     <table class="table table-hover">
       <thead class="thead-dark">
         <tr>
-          <th scope="col">#</th>
           <th scope="col">國家/區域</th>
-          <th scope="col">簽證類型</th>
+          <th scope="col">類型</th>
           <th scope="col">天數</th>
           <th scope="col">備註</th>
         </tr>
@@ -55,7 +59,6 @@
           v-for="(country,index) in filterRows.slice(pageStart, pageStart + offset)"
           :key="index.id"
         >
-          <th scope="row">{{country.id}}</th>
           <td>{{country.name}}</td>
           <td>{{country.Category.name}}</td>
           <td>{{country.days}}</td>
