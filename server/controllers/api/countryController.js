@@ -27,7 +27,7 @@ let countryController = {
         for (let i = 0; i < pages; i++) {
           listWithPages[i + 1] = new Array()
           while (listWithPages[i + 1].length < pageLimit) {
-            for (let j = pageLimit * i; j <= pageLimit * i + 9; j++) {
+            for (let j = pageLimit * i; j <= pageLimit * i + (pageLimit - 1); j++) {
               listWithPages[i + 1].push(temp[j])
             }
           }
@@ -92,7 +92,7 @@ let countryController = {
       for (let i = 0; i < pages; i++) {
         listWithPages[i + 1] = new Array()
         while (listWithPages[i + 1].length < pageLimit) {
-          for (let j = pageLimit * i; j <= pageLimit * i + 9; j++) {
+          for (let j = pageLimit * i; j <= pageLimit * i + (pageLimit - 1); j++) {
             listWithPages[i + 1].push(temp[j])
           }
         }
