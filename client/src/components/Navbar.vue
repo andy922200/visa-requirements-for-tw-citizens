@@ -1,7 +1,7 @@
 // ./src/components/Navbar.vue
 <template>
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-    <router-link class="mx-auto navbar-brand" to="/">中華民國公民簽證要求</router-link>
+    <router-link class="mx-auto navbar-brand" to="/">中華民國(台灣)公民簽證要求</router-link>
 
     <button
       class="navbar-toggler"
