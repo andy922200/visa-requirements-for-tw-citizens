@@ -15,7 +15,6 @@ if (process.env.NODE_ENV !== 'production') {
 const db = require('./models')
 
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use(express.static('public'))
 app.use(methodOverride('_method'))
 
 app.use(
