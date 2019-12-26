@@ -33,15 +33,15 @@ app.use(
   res.locals.user = req.user
 })*/
 
+// 連結後端 api 路由
+require('./routes/')(app)
+
 // production mode 前端路由
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV !== 'production') {
   // static folder
   app.use(express.static(__dirname + '/server/public/'))
   app.get(/.*/, (req, res) => res.sendFile(__dirname + '/server/public/index.html'))
 }
-// 連結後端 api 路由
-require('./routes/')(app)
-
 
 app.listen(port, () => {
   console.log(`The app is listening on port ${port}`)
