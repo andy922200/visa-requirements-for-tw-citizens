@@ -3,7 +3,7 @@ const faker = require('faker')
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    queryInterface.bulkInsert('Continents',
+    queryInterface.bulkInsert("Continents",
       [
         {
           name: `亞洲`,
@@ -51,7 +51,7 @@ module.exports = {
       {}
     )
 
-    queryInterface.bulkInsert('Regions',
+    queryInterface.bulkInsert("Regions",
       [
         {
           name: `東北亞`,
@@ -204,7 +204,7 @@ module.exports = {
       {}
     )
 
-    queryInterface.bulkInsert('Categories',
+    queryInterface.bulkInsert("Categories",
       [
         {
           name: `免簽`,
@@ -225,7 +225,7 @@ module.exports = {
       {}
     )
 
-    return queryInterface.bulkInsert('Countries',
+    return queryInterface.bulkInsert("Countries",
       [
         {
           name: `日本`,
