@@ -10,7 +10,6 @@ const cors = require('cors')
 app.use(cors())
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config()
-  console.log(__dirname)
 }
 
 const db = require('./models')
@@ -27,11 +26,6 @@ app.use(
     saveUninitialized: true
   })
 )
-
-/*localStorage Settings*/
-/*app.use((req, res, next) => {
-  res.locals.user = req.user
-})*/
 
 // 連結後端 api 路由
 require('./routes/')(app)
