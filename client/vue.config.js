@@ -6,7 +6,6 @@ module.exports = {
     proxy: {
       '/api': {
         target: 'https://visa-requirement-tw.herokuapp.com/'
-        //target: 'http://localhost:3000'
       }
     },
   }
