@@ -17,7 +17,7 @@
 
     <div id="navbarSupportedContent" class="navbar-collapse collapse navbar-center">
       <div class="ml-auto d-flex align-items-center navbar-collapse-center">
-        <a target="_blank" href="#">
+        <a target="_blank" href="https://github.com/andy922200/visa-requirements-for-tw-citizens">
           <font-awesome-icon :icon="['fab', 'github']" />
         </a>
       </div>
