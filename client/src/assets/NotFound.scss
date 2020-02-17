@@ -1,0 +1,22 @@
+$base-color: #bc955c;
+#for404 {
+  h3 {
+    color: $base-color;
+    text-align: center;
+  }
+  h6 {
+    color: $base-color;
+  }
+  p {
+    text-align: center;
+    color: #11495c;
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  img {
+    width: 100%;
+  }
+  .row {
+    height: 60vh;
+  }
+}
